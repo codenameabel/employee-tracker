@@ -1,6 +1,8 @@
 -- Deletes if database exists 
 DROP DATABASE IF EXISTS employee_tracker;
 
+USE DATABASE employee_tracker;
+
 -- Creats the database 
 CREATE database employee_tracker;
 
@@ -31,4 +33,3 @@ CREATE TABLE employees (
     manager_id INTEGER NULL, 
     FOREIGN KEY (manager_id) REFERENCES employees (id)
 );
-
